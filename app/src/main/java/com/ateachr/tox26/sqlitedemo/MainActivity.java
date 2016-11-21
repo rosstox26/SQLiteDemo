@@ -68,7 +68,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             } else {
                 Toast.makeText(this, "Login Denied for " + username + ", correct password: " + correctPassword, Toast.LENGTH_SHORT).show();
             }
-        } else if (v == buttonFindID) { 
+        } else if (v == buttonFindID) {
             username = editTextGetIDLogin.getText().toString();
             int rowID = loginDB.getRowID(username);
             if (rowID != -1) {
